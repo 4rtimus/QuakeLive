@@ -1,2 +1,2 @@
 # QuakeLive
-Config and HUD 
+Config 
