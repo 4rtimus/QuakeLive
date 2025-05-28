@@ -1,0 +1,361 @@
+#include "ui/menudef.h"
+
+//////////////////////////////////////////////////////
+// 											GRAPHIC											//
+//////////////////////////////////////////////////////
+
+menuDef 	{
+	visible 1
+	rect 131 434 0 0
+
+	itemDef	{
+		style 1
+		visible 1
+		rect -10 0 10 62
+		backColor 0.8 0.8 0.8 0.6
+		backGround "ui/assets/hud/scoreboxl2.tga"
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 0 0 367 62
+		backColor 0.8 0.8 0.8 0.6
+		backGround "ui/assets/hud/scoreboxm.tga"
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 367 0 10 62
+		backColor 0.8 0.8 0.8 0.6
+		backGround "ui/assets/hud/scoreboxr.tga"
+			}
+		}
+
+//////////////////////////////////////////////////////
+// 												SCORES										//
+//////////////////////////////////////////////////////
+
+// 1 place 
+
+menuDef 	{
+	visible 1
+	rect 0 -2 0 0
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 0 7 137 17
+		backColor 0.8 0 0 0.8
+		background "ui/assets/hud/teamonm.tga"	              
+		ownerdrawflag CG_SHOW_IF_PLYR_IS_FIRST_PLACE
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 137 7 17 17
+		backColor 0.8 0 0 0.8
+		background "ui/assets/hud/teamonr.tga"
+		ownerdrawflag CG_SHOW_IF_PLYR_IS_FIRST_PLACE
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 0 0 150 40
+		backColor 0.8 0.8 0.8 0.6
+		backGround "ui/assets/hud/scoreboxm.tga"
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 150 0 8 40
+		backColor 0.8 0.8 0.8 0.6
+		backGround "ui/assets/hud/scoreboxr.tga"
+			}
+		}
+
+// 2 place 
+
+menuDef 	{
+	visible 1
+	rect 0 22 0 0
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 0 7 137 17
+		backColor 0.3 0.8 0 0.8
+		background "ui/assets/hud/teamonm.tga"	              
+		ownerdrawflag CG_SHOW_IF_PLYR_IS_NOT_FIRST_PLACE
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 137 7 17 17
+		backColor 0.3 0.8 0 0.8
+		background "ui/assets/hud/teamonr.tga"
+		ownerdrawflag CG_SHOW_IF_PLYR_IS_NOT_FIRST_PLACE
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 0 0 150 40
+		backColor 0.8 0.8 0.8 0.6
+		backGround "ui/assets/hud/scoreboxm.tga"
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 150 0 8 40
+		backColor 0.8 0.8 0.8 0.6
+		backGround "ui/assets/hud/scoreboxr.tga"
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		textscale .24
+		rect 4 -5 136 40
+		ownerdraw CG_1ST_PLACE_SCORE
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		textscale .24
+	   	rect 4 20 136 40
+		ownerdraw CG_2ND_PLACE_SCORE
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 4 6 16 16
+		backcolor 1.0 1.0 1.0 0.6
+		ownerdrawflag CG_SHOW_CTF                    	
+		ownerdraw CG_BLUE_FLAGSTATUS
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 4 -18 16 16
+		backcolor 1.0 1.0 1.0 0.6
+		ownerdrawflag CG_SHOW_CTF                    	
+		ownerdraw CG_RED_FLAGSTATUS
+			}
+		}
+
+//////////////////////////////////////////////////////
+// 											TIMER												//
+//////////////////////////////////////////////////////
+
+menuDef 	{
+	visible 1
+	rect 245 -5 0 0
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 0 0 150 85
+		backColor 0.8 0.8 0.8 0.6
+		backGround "ui/assets/hud/scoreboxm.tga"
+			}
+
+	itemDef	{
+		style 1
+		visible 0
+		rect -10 0 10 85
+		backColor 0.8 0.8 0.8 0.6
+		backGround "ui/assets/hud/scoreboxl2.tga"
+			}
+		}
+
+menuDef 	{
+	visible 1
+
+	itemDef	{
+		visible 1
+		textstyle 6
+		textscale 0.9
+		rect 273 43 25 25
+		foreColor 1.0 0.0 0.0 0.75
+		ownerdraw CG_LEVELTIMER
+			}
+		}
+
+//////////////////////////////////////////////////////
+// 											HEALTH											//
+//////////////////////////////////////////////////////
+
+menuDef	{
+	visible 1
+	rect 0 0 0 0
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 273 450 20 20
+		backcolor 0.0 0.0 0.0 0.8
+		background "ui/assets/hud/health.tga"
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 273 448 20 20
+		backcolor 0.3 0.8 0.0 0.8
+		background "ui/assets/hud/health.tga"
+			}
+
+	itemDef	{
+		visible 1
+		textstyle 6
+		textscale 0.65
+		rect 300 438 0 0
+		textalign ITEM_ALIGN_CENTER
+		ownerdraw CG_PLAYER_HEALTH
+		addColorRange -999 30	1.0 0.1 0.1 0.75
+		addColorRange 31 80	1.0 0.7 0.0 0.75
+		addColorRange 81 125	0.3 0.8 0.0 0.75
+		addColorRange 126 200	0.0 0.7 1.0 0.75
+			}
+		}
+
+//////////////////////////////////////////////////////
+// 											ARMOR								  			//
+//////////////////////////////////////////////////////
+
+menuDef	{
+	visible 1
+	rect 0 0 0 0
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 400 450 20 20
+		backcolor 0.0 0.0 0.0 0.8
+		background "ui/assets/hud/armor.tga"
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 400 448 20 20
+		backcolor 0.0 0.7 1.0 0.8
+		background "ui/assets/hud/armor.tga"
+			}
+
+	itemDef	{
+		visible 1
+		textstyle 6
+		textscale 0.65
+		rect 430 438 0 0
+		textalign ITEM_ALIGN_LEFT
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		addColorRange -999 30	1.0 0.1 0.1 0.75
+		addColorRange 31 80	1.0 0.7 0.0 0.75
+		addColorRange 81 125	1.0 1.0 1.0 0.75
+		addColorRange 126 200	0.0 0.7 1.0 0.75
+			}
+		}
+
+//////////////////////////////////////////////////////
+// 											AMMO									  		//
+//////////////////////////////////////////////////////
+
+menuDef	{
+	visible 1
+	rect 0 0 0 0
+
+	itemDef {
+		style 1
+		visible 1
+		rect 140 443 30 30
+		ownerdraw CG_PLAYER_AMMO_ICON
+			}
+
+	itemDef	{
+		visible 1
+		textstyle 6
+		textscale 0.65
+		rect 180 438 0 0
+		textalign ITEM_ALIGN_LEFT
+		ownerdraw CG_PLAYER_AMMO_VALUE
+		addColorRange 0 9		1.0 0.1 0.1 0.75
+		addColorRange 10 200	1.0 1.0 1.0 0.75
+			}
+		}
+
+//////////////////////////////////////////////////////
+//											 ITEMS 						  				//
+//////////////////////////////////////////////////////
+
+menuDef	{
+	visible 1
+	rect 0 0 0 0
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 130 448 20 20
+		ownerdraw CG_PLAYER_ITEM
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 550 420 20 20
+		ownerdraw CG_CTF_POWERUP
+			}
+
+	itemDef	{
+		style 1
+		visible 1
+		rect 550 438 20 20 
+		ownerdraw CG_AREA_POWERUP
+			}
+		}
+
+//////////////////////////////////////////////////////
+// 										Obituary 			  							//
+//////////////////////////////////////////////////////
+
+menuDef 	{
+	visible 1
+	rect 11 57 0 0
+
+	itemDef	{
+		visible 1
+		textscale 0.20
+		rect 0 0 25 25
+		foreColor 1.0 0.0 0.0 0.6
+		ownerdraw CG_PLAYER_OBIT
+			}
+		}
+
+//////////////////////////////////////////////////////
+// 											CHAT							  				//
+//////////////////////////////////////////////////////
+
+menuDef	{
+	visible 1
+	rect 0 0 0 0
+
+	itemDef	{
+		visible 1
+		rect 5 400 0 0
+		ownerdraw CG_AREA_NEW_CHAT
+			}
+		}
+
+//////////////////////////////////////////////////////
+// 												END 											//
+//////////////////////////////////////////////////////
