@@ -1,2 +1,2 @@
 # QuakeLive
-Config 
+Config files
