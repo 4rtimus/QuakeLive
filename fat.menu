@@ -1,14 +1,14 @@
 #include "ui/menudef.h"
 
 //////////////////////////////////////////////////////
-// 			Gun Bar			    //
+// 		   Hud Background		    //
 //////////////////////////////////////////////////////
 
 menuDef {
 	visible 1
 	rect 131 434 0 0
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect -10 0 10 62
@@ -16,7 +16,7 @@ menuDef {
 	backGround "ui/assets/hud/scoreboxl2.tga"
 	}
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 0 0 367 62
@@ -24,7 +24,7 @@ menuDef {
 	backGround "ui/assets/hud/scoreboxm.tga"
 	}
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 367 0 10 62
@@ -37,99 +37,99 @@ menuDef {
 // 			Scores			    //
 //////////////////////////////////////////////////////
 
-// Your Name 
+// 1 place  
 
 menuDef {
 	visible 1
 	rect 0 -2 0 0
 
-// red background 
+// Blue tint
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 0 7 137 17
-	backColor 0.8 0 0 0.8
+	backColor 0 0 1 0.8
 	background "ui/assets/hud/teamonm.tga"	              
 	ownerdrawflag CG_SHOW_IF_PLYR_IS_FIRST_PLACE
 	}
 
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 137 7 17 17
-	backColor 0.8 0 0 0.8
+	backColor 0 0 1 0.8
 	background "ui/assets/hud/teamonr.tga"
 	ownerdrawflag CG_SHOW_IF_PLYR_IS_FIRST_PLACE
 	}
 
-// black box 
+// Black background 
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 0 0 150 40
-	backColor 0.8 0.8 0.8 0.6
+	backColor 0.8 0.8 0.8 0.3
 	backGround "ui/assets/hud/scoreboxm.tga"
 	}
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 150 0 8 40
-	backColor 0.8 0.8 0.8 0.6
+	backColor 0.8 0.8 0.8 0.3
 	backGround "ui/assets/hud/scoreboxr.tga"
 	}
 }
 
-// Enemy Name
+// 2 place 
 
 menuDef {
 	visible 1
 	rect 0 22 0 0
 
-// green background  
+// Red tint 
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 0 7 137 17
-	backColor 0.3 0.8 0 0.8
+	backColor 0.8 0 0 0.8
 	background "ui/assets/hud/teamonm.tga"	              
 	ownerdrawflag CG_SHOW_IF_PLYR_IS_NOT_FIRST_PLACE
 	}
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 137 7 17 17
-	backColor 0.3 0.8 0 0.8
+	backColor 0.8 0 0 0.8
 	background "ui/assets/hud/teamonr.tga"
 	ownerdrawflag CG_SHOW_IF_PLYR_IS_NOT_FIRST_PLACE
 	}
 
-// black box
+// Black background
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 0 0 150 40
-	backColor 0.8 0.8 0.8 0.6
+	backColor 0.8 0.8 0.8 0.3
 	backGround "ui/assets/hud/scoreboxm.tga"
 	}
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 150 0 8 40
-	backColor 0.8 0.8 0.8 0.6
+	backColor 0.8 0.8 0.8 0.3
 	backGround "ui/assets/hud/scoreboxr.tga"
 	}
 
 // 1st
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	textscale .24
@@ -139,17 +139,17 @@ menuDef {
 
 // 2nd 
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	textscale .24
-  rect 4 20 100 40
+	rect 4 20 100 40
 	ownerdraw CG_2ND_PLACE_SCORE
 	}
 
 // 
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 4 6 16 16
@@ -158,7 +158,7 @@ menuDef {
 	ownerdraw CG_BLUE_FLAGSTATUS
 	}
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 4 -18 16 16
@@ -176,7 +176,9 @@ menuDef {
 	visible 1
 	rect 240 -5 0 0
 
-	itemDef	{
+// Black background 
+
+itemDef	{
 	style 1
 	visible 1
 	rect 0 0 150 85
@@ -184,7 +186,7 @@ menuDef {
 	backGround "ui/assets/hud/scoreboxm.tga"
 	}
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect -10 0 10 85
@@ -192,7 +194,7 @@ menuDef {
 	backGround "ui/assets/hud/scoreboxl2.tga"
 	}
 
-	itemDef {
+itemDef {
 	style 1
 	visible 1
 	rect 150 0 10 85
@@ -204,7 +206,9 @@ menuDef {
 menuDef {
 	visible 1
 
-	itemDef	{
+// Time countdown
+
+itemDef	{
 	visible 1
 	textstyle 6
 	textscale 0.9
@@ -222,7 +226,7 @@ menuDef	{
 	visible 1
 	rect 0 0 0 0
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 273 450 20 20
@@ -230,7 +234,7 @@ menuDef	{
 	background "ui/assets/hud/health.tga"
 	}
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 273 448 20 20
@@ -238,7 +242,7 @@ menuDef	{
 	background "ui/assets/hud/health.tga"
 	}
 
-	itemDef	{
+itemDef	{
 	visible 1
 	textstyle 6
 	textscale 0.65
@@ -260,7 +264,7 @@ menuDef	{
 	visible 1
 	rect 0 0 0 0
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 400 450 20 20
@@ -268,7 +272,7 @@ menuDef	{
 	background "ui/assets/hud/armor.tga"
 	}
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 400 448 20 20
@@ -276,7 +280,7 @@ menuDef	{
 	background "ui/assets/hud/armor.tga"
 	}
 
-	itemDef	{
+itemDef	{
 	visible 1
 	textstyle 6
 	textscale 0.65
@@ -298,14 +302,14 @@ menuDef	{
 	visible 1
 	rect 0 0 0 0
 
-	itemDef {
+itemDef {
 	style 1
 	visible 1
 	rect 140 443 30 30
 	ownerdraw CG_PLAYER_AMMO_ICON
 	}
 
-	itemDef	{
+itemDef	{
 	visible 1
 	textstyle 6
 	textscale 0.65
@@ -318,28 +322,28 @@ menuDef	{
 }
 
 //////////////////////////////////////////////////////
-//			Items			    //
+//			Items 			    //
 //////////////////////////////////////////////////////
 
 menuDef	{
 	visible 1
 	rect 0 0 0 0
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 130 448 20 20
 	ownerdraw CG_PLAYER_ITEM
 	}
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 550 420 20 20
 	ownerdraw CG_CTF_POWERUP
 	}
 
-	itemDef	{
+itemDef	{
 	style 1
 	visible 1
 	rect 550 438 20 20 
@@ -348,17 +352,17 @@ menuDef	{
 }
 
 //////////////////////////////////////////////////////
-// 			Obituary		    //
+// 			Obituary 		    //
 //////////////////////////////////////////////////////
 
 menuDef {
 	visible 1
 	rect 11 57 0 0
 
-	itemDef	{
+itemDef	{
 	visible 1
 	textscale 0.20
-	rect 0 0 25 25
+	rect -5 0 25 25
 	foreColor 1.0 0.0 0.0 0.6
 	ownerdraw CG_PLAYER_OBIT
 	}
@@ -372,7 +376,7 @@ menuDef	{
 	visible 1
 	rect 0 0 0 0
 
-	itemDef	{
+itemDef	{
 	visible 1
 	rect 5 400 0 0
 	ownerdraw CG_AREA_NEW_CHAT
@@ -380,5 +384,5 @@ menuDef	{
 }
 
 //////////////////////////////////////////////////////
-// 			End			    //
+// 			END 			    //
 //////////////////////////////////////////////////////
