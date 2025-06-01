@@ -316,7 +316,7 @@ itemDef	{
 	rect 180 438 0 0
 	textalign ITEM_ALIGN_LEFT
 	ownerdraw CG_PLAYER_AMMO_VALUE
-	addColorRange 0 9		1.0 0.1 0.1 1.0
+	addColorRange 0 9	1.0 0.1 0.1 1.0
 	addColorRange 10 200	1.0 1.0 1.0 1.0
 	}
 }
