@@ -79,7 +79,7 @@ itemDef {
 	visible       1
 	textalign     ITEM_ALIGN_RIGHT
 	textscale     .35
-	//forecolor     1 0.1 0.1 0.9
+//	forecolor     1 0.1 0.1 0.9
 	forecolor     1 1 1 0.55
 	}
 
@@ -418,16 +418,25 @@ menuDef {
 	visible    MENU_TRUE
 	rect       10 12 160 32
 
-itemdef {
-	name      "hudObit"
+//itemdef {
+//	name      "hudObit"
+//	ownerdraw CG_PLAYER_OBIT
+//	decoration
+//	textstyle 0
+//	rect      -5 10 75 32
+//	visible   1
+//	style 2
+//	textscale .25
+//	}
+
+itemDef	{
+	visible 1
+	textscale 0.20
+	rect -5 0 25 25
+	foreColor 1.0 0.0 0.0 1.0
 	ownerdraw CG_PLAYER_OBIT
-	decoration
-	textstyle 0
-	rect      -5 10 160 32
-	visible   1
-	style 2
-	textscale .25
 	}
+
 }
 //==============================[Chat]==============	
 	
@@ -477,9 +486,9 @@ itemDef {
 	rect 0 275 145 45
 	visible 1
 	decoration
-//backcolor 1 1 1 .8
+//	backcolor 1 1 1 .8
 	style 1
-//background "ui/assets/score/ink_fade_right.png"
+//	background "ui/assets/score/ink_fade_right.png"
 	}
 }
 
@@ -517,22 +526,32 @@ menuDef {
 	name "Player"
 	fullScreen MENU_FALSE
 	visible MENU_TRUE
-	rect 310 430 100 60 
+	rect 315 430 100 60 
 	
 //itemDef {
-//name "HealthCritical"
-//rect 95 -3 68 68
-//style WINDOW_STYLE_SHADER
-//background "ui/assets/hud/healthalert"
-//visible 1
-//ownerdrawflag CG_SHOW_HEALTHCRITICAL            
-// }
+//	name "HealthCritical"
+//	rect 95 -3 68 68
+//	style WINDOW_STYLE_SHADER
+//	background "ui/assets/hud/healthalert"
+//	visible 1
+//	ownerdrawflag CG_SHOW_HEALTHCRITICAL            
+//	}
+
+//itemDef {
+//	name "playerhead"
+//	rect 390 -45 35 35
+//	style WINDOW_STYLE_FILLED
+//	backcolor 0 0 0 0.2
+//	ownerdraw CG_PLAYER_HEAD
+//	visible 1
+//	decoration
+//	}	
 	
 itemDef {
 	name "healthicon"
 	rect -100 -39 135 135
 	style WINDOW_STYLE_FILLED 
-	backcolor 0.0 0.0 0.0 1.0
+	backcolor 0.0 0.7 1.0 0.9
 	background "gfx/2d/timer/health.png"
 	visible 1
 	decoration
@@ -542,7 +561,7 @@ itemDef {
 	name "healthicon"
 	rect -99 -38 133 133
 	style WINDOW_STYLE_FILLED 
-	backcolor 0.0 0.7 1.0 0.7
+	backcolor 0.0 0.0 0.0 1.0
 	background "gfx/2d/timer/health.png"
 	visible 1
 	decoration
@@ -555,8 +574,8 @@ itemDef {
 	textstyle 0
 	textscale 1
 	ownerdraw CG_PLAYER_HEALTH
-	addColorRange 0 125 0 0 0 1
-	addColorRange 126 999 1 0 1 1 
+	addColorRange 0 100 0 0 0 1
+	addColorRange 101 200 1 0 1 1 
 	}
 
 itemDef {
@@ -566,8 +585,8 @@ itemDef {
 	textstyle 0
 	textscale 1
 	ownerdraw CG_PLAYER_HEALTH
-	addColorRange 0 125 0 0 0 1
-	addColorRange 126 999 1 0 1 1
+	addColorRange 0 100 0 0 0 1
+	addColorRange 101 200 1 0 1 1
 	}
 
 itemDef {
@@ -577,8 +596,8 @@ itemDef {
 	textstyle 0
 	textscale 1
 	ownerdraw CG_PLAYER_HEALTH
-	addColorRange 0 125 0 0 0 1
-	addColorRange 126 999 1 0 1 1
+	addColorRange 0 100 0 0 0 1
+	addColorRange 101 200 1 0 1 1
 	}
 
 itemDef {
@@ -588,8 +607,8 @@ itemDef {
 	textstyle 0
 	textscale 1
 	ownerdraw CG_PLAYER_HEALTH
-	addColorRange 0 125 0 0 0 1
-	addColorRange 126 999 1 0 1 1
+	addColorRange 0 100 0 0 0 1
+	addColorRange 101 200 1 0 1 1
 	}
 
 itemDef {
@@ -597,13 +616,13 @@ itemDef {
 	rect 0 0 0 0
 	visible 1
 	textstyle 0
-//forecolor 0 0 0 1
+//	forecolor 0 0 0 1
 	textscale 1
 	ownerdraw CG_PLAYER_HEALTH
-	addColorRange 0 30	1.0 0.1 0.1 1.0
-	addColorRange 31 80	1.0 0.7 0.0 1.0
-	addColorRange 81 125	0.3 0.8 0.0 1.0
-	addColorRange 126 200	0.0 0.7 1.0 1.0
+	addColorRange 0 50	1.0 0.1 0.1 1.0
+	addColorRange 51 90	1.0 0.7 0.0 1.0
+	addColorRange 91 100	0.3 0.8 0.0 1.0
+	addColorRange 101 200	0.0 0.7 1.0 1.0
 	}
 }
 
@@ -620,8 +639,8 @@ itemDef {
 	name "armoricon"
 	rect 50 10 40 40
 	style WINDOW_STYLE_FILLED
-//backcolor 0.01 .01 .01 1
-//background "gfx/2d/timer/armor.png"
+//	backcolor 0.01 .01 .01 .8
+//	background "gfx/2d/timer/armor.png"
 	ownerdraw CG_PLAYER_ARMOR_ICON
 	visible 1
 	decoration
@@ -677,11 +696,11 @@ itemDef {
 	visible 1
 	textstyle 0	
 	textscale 1
-//forecolor 0 0 0 1
+//	forecolor 0 0 0 1
 	ownerdraw CG_PLAYER_ARMOR_VALUE 
-	addColorRange -999 30	1.0 0.1 0.1 1.0
-	addColorRange 31 90	1.0 0.7 0.0 1.0
-	addColorRange 91 100	1.0 1.0 1.0 1.0
+	addColorRange 0 50	1.0 0.1 0.1 1.0
+	addColorRange 51 90	1.0 0.7 0.0 1.0
+	addColorRange 91 100	0.3 0.8 0.0 1.0
 	addColorRange 101 200	0.0 0.7 1.0 1.0
 	}
 }
@@ -754,4 +773,3 @@ itemDef {
 	backcolor 0 0 0 1
 	} 
 }
-
