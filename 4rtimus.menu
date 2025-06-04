@@ -419,15 +419,15 @@ menuDef {
 	rect       10 12 160 32
 
 //itemdef {
-	//name      "hudObit"
-	//ownerdraw CG_PLAYER_OBIT
-	//decoration
-	//textstyle 0
-	//rect      -5 10 75 32
-	//visible   1
-	//style 2
-	//textscale .25
-	//}
+//	name      "hudObit"
+//	ownerdraw CG_PLAYER_OBIT
+//	decoration
+//	textstyle 0
+//	rect      -5 10 75 32
+//	visible   1
+//	style 2
+//	textscale .25
+//	}
 
 itemDef	{
 	visible 1
@@ -499,8 +499,8 @@ menuDef {
 	visible    MENU_TRUE
 	
 itemDef {
-	name       "Timershadowbttm"
-	rect       -4 0 84 20
+	name       "Timershadowleft"
+	rect       -3.1 0 84 20
 	visible    1
 	textstyle  2
 	forecolor  0.0 0.7 1.0 0.9
@@ -510,7 +510,7 @@ itemDef {
 
 itemDef {
 	name       "Timershadowtop"
-	rect       -3 -1 84 20
+	rect       -3 -0.3 84 20
 	visible    1
 	textstyle  2
 	forecolor  0.0 0.7 1.0 0.9
@@ -519,8 +519,8 @@ itemDef {
 	}
 
 itemDef {
-	name       "Timershadowleft"
-	rect       -3 1 84 20
+	name       "Timershadowbottom"
+	rect       -3 0.5 84 20
 	visible    1
 	textstyle  2
 	forecolor  0.0 0.7 1.0 0.9
@@ -530,7 +530,7 @@ itemDef {
 
 itemDef {
 	name       "Timershadowright"
-	rect       -2 0 84 20
+	rect       -2.7 0 84 20
 	visible    1
 	textstyle  2
 	forecolor  0.0 0.7 1.0 0.9
@@ -574,7 +574,7 @@ itemDef {
 	visible 1
 	ownerdraw CG_PLAYER_HEAD
 	decoration
-  }
+  	}
 
 //itemDef {
 	//name "healthicon"
@@ -597,8 +597,8 @@ itemDef {
 	//}
 
 itemDef {
-	name "health_shadow1"
-	rect 1 0 0 0
+	name "health_shadow1" // right
+	rect 0.9 0 0 0 // 1 0 0 0
 	visible 1
 	textstyle 0
 	textscale 1
@@ -608,8 +608,8 @@ itemDef {
 	}
 
 itemDef {
-	name "health_shadow2"
-	rect 0 1 0 0
+	name "health_shadow2" // bottom
+	rect 0 0.9 0 0 // 
 	visible 1
 	textstyle 0
 	textscale 1
@@ -619,8 +619,8 @@ itemDef {
 	}
 
 itemDef {
-	name "health_shadow3"
-	rect -1 0 0 0
+	name "health_shadow3" // left
+	rect -0.5 0 0 0 // 
 	visible 1
 	textstyle 0
 	textscale 1
@@ -630,8 +630,8 @@ itemDef {
 	}
 
 itemDef {
-	name "health_shadow4"
-	rect 0 -1 0 0
+	name "health_shadow4" // top 
+	rect 0 -0.5 0 0 // 
 	visible 1
 	textstyle 0
 	textscale 1
@@ -677,8 +677,8 @@ itemDef {
 	}	
 
 itemDef {
-	name "armor_shadow1"
-	rect 101 0 0 0
+	name "armor_shadow1" // right 
+	rect 100.5 0 0 0
 	visible 1
 	textstyle 0	
 	textscale 1
@@ -688,8 +688,8 @@ itemDef {
 	}
 
 itemDef {
-	name "armor_shadow2"
-	rect 100 -1 0 0
+	name "armor_shadow2" // top 
+	rect 100 -0.5 0 0
 	visible 1
 	textstyle 0	
 	textscale 1
@@ -700,7 +700,7 @@ itemDef {
 
 itemDef {
 	name "armor_shadow3"
-	rect 100 1 0 0
+	rect 100 0.9 0 0
 	visible 1
 	textstyle 0	
 	textscale 1
@@ -711,7 +711,7 @@ itemDef {
 
 itemDef {
 	name "armor_shadow4"
-	rect 99 0 0 0
+	rect 99.5 0 0 0
 	visible 1
 	textstyle 0	
 	textscale 1
@@ -726,7 +726,7 @@ itemDef {
 	visible 1
 	textstyle 0	
 	textscale 1
-	//forecolor 0 0 0 1
+  //forecolor 0 0 0 1
 	ownerdraw CG_PLAYER_ARMOR_VALUE 
 	addColorRange 0 59	1.0 0.1 0.1 1.0
 	addColorRange 60 80	1.0 0.3 0.0 1.0
@@ -745,8 +745,8 @@ menuDef {
 	rect 170 430 100 60
 
 itemDef {
-	name "weapon_shadow1"
-	rect 1 0 0 0
+	name "weapon_shadow1" // right 
+	rect 0.4 0 0 0
 	visible 1
 	textstyle ITEM_TEXTSTYLE_NORMAL	
 	textscale 1
@@ -755,8 +755,8 @@ itemDef {
 	}
 
 itemDef {
-	name "weapon_shadow2"
-	rect 0 1 0 0
+	name "weapon_shadow2" // bottom
+	rect 0 0.5 0 0
 	visible 1
 	textstyle ITEM_TEXTSTYLE_NORMAL	
 	textscale 1
@@ -765,8 +765,8 @@ itemDef {
 	}
 
 itemDef {
-	name "weapon_shadow3"
-	rect -1 0 0 0
+	name "weapon_shadow3" // left 
+	rect -0.2 0 0 0
 	visible 1
 	textstyle ITEM_TEXTSTYLE_NORMAL	
 	textscale 1
@@ -775,8 +775,8 @@ itemDef {
 	}
 
 itemDef {
-	name "weapon_shadow4"
-	rect 0 -1 0 0
+	name "weapon_shadow4" // top 
+	rect 0 -0.3 0 0
 	visible 1
 	textstyle ITEM_TEXTSTYLE_NORMAL	
 	textscale 1
