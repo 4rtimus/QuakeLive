@@ -1,7 +1,17 @@
-#include "ui/menudef.h"
+////////////////////////////////////////////////////////////////////
+//			    __  __ __  __ ____     		  //
+//			   / / / // / / // __ \			  //
+//			  / /_/ // / / // / / /			  //
+//			 / __  // /_/ // /_/ /			  //
+//			/_/ /_/ \____//_____/	  		  //
+//						    		  //
+////////////////////////////////////////////////////////////////////
 
-//========[NOTIFICATION AREA]=========
-	
+////////////////////////////////////////////////////////////////////
+//                       Notification Area                        //
+////////////////////////////////////////////////////////////////////
+
+#include "ui/menudef.h"
 menuDef {
 	name        "msgsArea"
 	fullScreen  MENU_FALSE
@@ -31,7 +41,10 @@ itemdef {
 	}
 }
 
-//*****CLAN ARENA*****//
+
+////////////////////////////////////////////////////////////////////
+//                           Clan Arena                           //
+////////////////////////////////////////////////////////////////////
 
 menuDef {
 	name "1vs1bg"
@@ -42,7 +55,7 @@ menuDef {
 		
 itemDef {
 	ownerdrawflag CG_SHOW_IF_PLYR_IS_ON_BLUE
-	name "laststanding"
+	name "laststandingblue"
 	rect 265 384 125 3
 	visible 1
 	decoration
@@ -52,7 +65,7 @@ itemDef {
 
 itemDef {
 	ownerdrawflag CG_SHOW_IF_PLYR_IS_ON_RED
-	name "laststanding"
+	name "laststandingred"
 	rect 265 384 125 3
 	visible 1
 	decoration
@@ -61,14 +74,16 @@ itemDef {
 	}
 } 
 
+////////////////////////////////////////////////////////////////////
+//                  Clan Arena Still Alive Count                  //
+////////////////////////////////////////////////////////////////////
+
 menuDef {
 	name        "caFrame"
 	fullScreen  MENU_FALSE
 	visible     MENU_TRUE
 	rect        538 350 64 48
 	ownerdrawflag CG_SHOW_CLAN_ARENA
-
-//*****CLAN ARENA STILL ALIVE COUNT*****//
 
 itemDef {
 	name          "redClanPlayers"
@@ -131,7 +146,9 @@ itemDef {
 	}
 }
 
-//*****SCORES TEAM*****//
+////////////////////////////////////////////////////////////////////
+//                           Scroes Team                          //
+////////////////////////////////////////////////////////////////////
 	
 menuDef {
 	name          "scoresFrameTeam"
@@ -140,8 +157,9 @@ menuDef {
 	visible       MENU_TRUE
 	ownerdrawflag CG_SHOW_ANYTEAMGAME
 
-		
-//*****SCORE BACKGROUNDS*****//
+////////////////////////////////////////////////////////////////////
+//                         Scores Backgrounds                     //
+////////////////////////////////////////////////////////////////////		
 
 itemDef {
 	name          "backgroundRed1"
@@ -182,8 +200,10 @@ itemDef {
 	backcolor     0.1 0.1 0.8 0.6
 	style         1
 	}
-	
-//*****SCORE VALUES*****//
+
+////////////////////////////////////////////////////////////////////
+//                         Scores Values                          //
+////////////////////////////////////////////////////////////////////	
 	
 itemdef {
 	name          "scoreRed1"
@@ -229,8 +249,11 @@ itemdef {
 	textalign     2
 	}
 }
-	
-//*****SCORE LIMITS*****//
+
+
+////////////////////////////////////////////////////////////////////
+//                         Score Limits                           //
+////////////////////////////////////////////////////////////////////
 
 menuDef {
 	name          "scoresFrameLimit"
@@ -250,8 +273,10 @@ itemDef {
 	ownerdrawflag CG_SHOW_IF_CHAT_VISIBLE
 	}
 }
-	
-	//*****SCORE BORDERS*****//
+
+////////////////////////////////////////////////////////////////////
+//                          Score Borders                         //
+////////////////////////////////////////////////////////////////////	
 	
 menuDef {
 	name          "bordersteam"
@@ -281,8 +306,9 @@ itemDef {
 	} 
 }
 
-
-//*****SCORES DUEL/FFA*****//
+////////////////////////////////////////////////////////////////////
+//                         Scores Duel/ffa                        //
+////////////////////////////////////////////////////////////////////
 	
 menuDef {
 	name          "scoresFrameDuel"
@@ -290,8 +316,10 @@ menuDef {
 	fullScreen    MENU_FALSE
 	visible       MENU_TRUE
 	ownerdrawflag CG_SHOW_ANYNONTEAMGAME
-	
-//*****SCORE BACKGROUNDS*****//
+
+////////////////////////////////////////////////////////////////////
+//                         Score Backgrounds                      //
+////////////////////////////////////////////////////////////////////	
 	
 itemDef {
 	name          "background1st"
@@ -314,8 +342,10 @@ itemDef {
 	background 		"ui/assets/score/ink_fade_right.png"
 	style         1
 	}
-		
-//*****SCORE VALUES*****//
+
+////////////////////////////////////////////////////////////////////
+//                           Score Values                         //
+////////////////////////////////////////////////////////////////////		
 
 itemdef {
 	name          "myscore"
@@ -348,7 +378,9 @@ itemdef {
 	}
 }
 
-//=======================[powerup]=============	
+////////////////////////////////////////////////////////////////////
+//                            Powerup                             //
+////////////////////////////////////////////////////////////////////	
 
 menuDef {
 	name       "powerup"
@@ -369,7 +401,10 @@ itemDef {
 	align     HUD_VERTICAL
 	}
 }
-//=======================[USEABLE PICKUP]=========
+
+////////////////////////////////////////////////////////////////////
+//                        Usable Pickups                          //
+////////////////////////////////////////////////////////////////////
 
 menuDef {
 	name       "pickups"
@@ -393,7 +428,10 @@ itemDef {
 	ownerdraw CG_CTF_POWERUP
 	}
 }
-//=========================[FLAG ICON]===========	
+
+////////////////////////////////////////////////////////////////////
+//                            Flag Icon                           //
+////////////////////////////////////////////////////////////////////
 	
 menuDef {
 	name       "playerHasFlag"
@@ -410,7 +448,10 @@ itemDef {
 	ownerdraw CG_PLAYER_HASFLAG 
 	}
 }
-//===========================[Kill messages]=========	
+
+////////////////////////////////////////////////////////////////////
+//                            Obituary                            //
+////////////////////////////////////////////////////////////////////	
 	
 menuDef {
 	name       "obit area"
@@ -436,9 +477,11 @@ itemDef	{
 	foreColor 1.0 0.0 0.0 1.0
 	ownerdraw CG_PLAYER_OBIT
 	}
-
 }
-//==============================[Chat]==============	
+
+////////////////////////////////////////////////////////////////////
+//                               Chat                             //
+////////////////////////////////////////////////////////////////////
 	
 menuDef {
 	name       "chat area"
@@ -456,7 +499,9 @@ itemdef {
 	}
 }
 
-//====[key]===
+////////////////////////////////////////////////////////////////////
+//                                Key                             //
+////////////////////////////////////////////////////////////////////
 
 menuDef {
 	name       "chat area"
@@ -473,7 +518,10 @@ itemDef {
 	ownerdraw CG_PLAYER_HASKEY
 	}
 }
-//================================[Timer]=============	
+
+////////////////////////////////////////////////////////////////////
+//                              Timer                             //
+////////////////////////////////////////////////////////////////////	
 	
 menuDef {
 	name "background"
@@ -559,14 +607,16 @@ itemDef {
 	}
 }
 
-//HEALTH
+////////////////////////////////////////////////////////////////////
+//                             Health                             //
+////////////////////////////////////////////////////////////////////
 
 menuDef {
 	widescreen WIDESCREEN_CENTER
 	name "Player"
 	fullScreen MENU_FALSE
 	visible MENU_TRUE
-	rect 315 430 100 60 
+	rect 445 430 100 60 
 	
 itemDef {
 	name "playerhead"
@@ -574,7 +624,7 @@ itemDef {
 	visible 1
 	ownerdraw CG_PLAYER_HEAD
 	decoration
-  	}
+  }
 
 //itemDef {
 	//name "healthicon"
@@ -656,14 +706,15 @@ itemDef {
 	}
 }
 
-
-//ARMOR
+////////////////////////////////////////////////////////////////////
+//                               Armor                            //
+////////////////////////////////////////////////////////////////////
 
 menuDef {
 	name "Armor"
 	fullScreen MENU_FALSE
 	visible MENU_TRUE	
-	rect 380 430 100 60
+	rect 450 430 100 60
 
 itemDef {
 	name "armoricon"
@@ -736,13 +787,15 @@ itemDef {
 	}
 }
 
-//weapon
+////////////////////////////////////////////////////////////////////
+//                               Ammo                             //
+////////////////////////////////////////////////////////////////////
 
 menuDef {
 	name "weapon"
 	fullScreen MENU_FALSE
 	visible MENU_TRUE	
-	rect 170 430 100 60
+	rect 180 430 100 60
 
 itemDef {
 	name "weapon_shadow1" // right 
@@ -796,7 +849,7 @@ itemDef {
 
 itemDef {
 	name "a"
-	rect -50 15 40 40
+	rect -50 12 40 40
 	visible 1
 	decoration
 	ownerdraw CG_PLAYER_AMMO_ICON
@@ -805,3 +858,6 @@ itemDef {
 	} 
 }
 
+////////////////////////////////////////////////////////////////////
+//                              End                               //
+////////////////////////////////////////////////////////////////////
