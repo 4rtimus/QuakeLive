@@ -1,10 +1,10 @@
 ////////////////////////////////////////////////////////////////////
 //			    __  __ __  __ ____     		  //
-//			   / / / // / / // __ \			  //
+//		           / / / // / / // __ \			  //
 //			  / /_/ // / / // / / /			  //
 //			 / __  // /_/ // /_/ /			  //
-//			/_/ /_/ \____//_____/	  		  //
-//						    		  //
+//			/_/ /_/ \____//_____/			  //
+//								  //
 ////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////
@@ -40,7 +40,6 @@ itemdef {
 	backcolor     1 1 1 1.0
 	}
 }
-
 
 ////////////////////////////////////////////////////////////////////
 //                           Clan Arena                           //
@@ -460,15 +459,15 @@ menuDef {
 	rect       10 12 160 32
 
 //itemdef {
-//	name      "hudObit"
-//	ownerdraw CG_PLAYER_OBIT
-//	decoration
-//	textstyle 0
-//	rect      -5 10 75 32
-//	visible   1
-//	style 2
-//	textscale .25
-//	}
+	//name      "hudObit"
+	//ownerdraw CG_PLAYER_OBIT
+	//decoration
+	//textstyle 0
+	//rect      -5 10 75 32
+	//visible   1
+	//style 2
+	//textscale .25
+	//}
 
 itemDef	{
 	visible 1
@@ -618,33 +617,33 @@ menuDef {
 	visible MENU_TRUE
 	rect 445 430 100 60 
 	
+//itemDef {
+	//name "playerhead"
+	//rect -51 10 39 39
+	//visible 1
+	//ownerdraw CG_PLAYER_HEAD
+	//decoration
+  	//}
+
 itemDef {
-	name "playerhead"
-	rect -51 10 39 39
+	name "healthicon"
+	rect -100 -39 135 135
+	style WINDOW_STYLE_FILLED 
+	backcolor 0.0 0.7 1.0 1
+	background "gfx/2d/timer/health.png"
 	visible 1
-	ownerdraw CG_PLAYER_HEAD
 	decoration
-  }
+	}
 
-//itemDef {
-	//name "healthicon"
-	//rect -100 -39 135 135
-	//style WINDOW_STYLE_FILLED 
-	//backcolor 0.0 0.7 1.0 0.9
-	//background "gfx/2d/timer/health.png"
-	//visible 1
-	//decoration
-	//}
-
-//itemDef {
-	//name "healthicon"
-	//rect -99 -38 133 133
-	//style WINDOW_STYLE_FILLED 
-	//backcolor 0.0 0.0 0.0 1.0
-	//background "gfx/2d/timer/health.png"
-	//visible 1
-	//decoration
-	//}
+itemDef {
+	name "healthicon"
+	rect -99 -38 133 133
+	style WINDOW_STYLE_FILLED 
+	backcolor 0.0 0.0 0.0 1.0
+	background "gfx/2d/timer/health.png"
+	visible 1
+	decoration
+	}
 
 itemDef {
 	name "health_shadow1" // right
@@ -718,11 +717,22 @@ menuDef {
 
 itemDef {
 	name "armoricon"
-	rect 50 13 40 40
+	rect  -1.5 -39.5 140 140 // 0 -38 137 137 
 	style WINDOW_STYLE_FILLED
-	//backcolor 0.01 .01 .01 .8
-	//background "gfx/2d/timer/armor.png"
-	ownerdraw CG_PLAYER_ARMOR_ICON
+	backcolor   0.0 0.7 1.0 1
+	background "gfx/2d/timer/armor.png"
+	//ownerdraw CG_PLAYER_ARMOR_ICON
+	visible 1
+	decoration
+	}	
+
+itemDef {
+	name "armoricon"
+	rect  0.5 -35 136 130 // 1 -35 135 130
+	style WINDOW_STYLE_FILLED
+	backcolor   0 0 0 1
+	background "gfx/2d/timer/armor.png"
+	//ownerdraw CG_PLAYER_ARMOR_ICON
 	visible 1
 	decoration
 	}	
@@ -777,7 +787,7 @@ itemDef {
 	visible 1
 	textstyle 0	
 	textscale 1
-  //forecolor 0 0 0 1
+  	//forecolor 0 0 0 1
 	ownerdraw CG_PLAYER_ARMOR_VALUE 
 	addColorRange 0 59	1.0 0.1 0.1 1.0
 	addColorRange 60 80	1.0 0.3 0.0 1.0
@@ -849,13 +859,13 @@ itemDef {
 
 itemDef {
 	name "a"
-	rect -50 12 40 40
+	rect -40 12 30 30
 	visible 1
 	decoration
 	ownerdraw CG_PLAYER_AMMO_ICON
 	style WINDOW_STYLE_EMPTY
 	backcolor 0 0 0 1
-	} 
+	}	 
 }
 
 ////////////////////////////////////////////////////////////////////
