@@ -42,6 +42,33 @@ itemdef {
 }
 
 ////////////////////////////////////////////////////////////////////
+//                            Crosshair                           //
+////////////////////////////////////////////////////////////////////
+
+menuDef {
+	name "Customcrosshair"
+	rect 2 0 32 256
+	fullScreen MENU_FALSE
+	visible MENU_TRUE
+
+itemDef {
+	name "Horizontalbar"
+	rect 315.8 239 4.5 2
+	style WINDOW_STYLE_FILLED
+	backcolor 0 0 0 1
+	visible 1
+	}
+
+itemDef {
+	name "Verticalbar"
+	rect 317.3 237 1.5 6
+	style WINDOW_STYLE_FILLED
+	backcolor 0 0 0 1
+	visible 1
+	}
+}
+
+////////////////////////////////////////////////////////////////////
 //                           Clan Arena                           //
 ////////////////////////////////////////////////////////////////////
 
@@ -248,7 +275,6 @@ itemdef {
 	textalign     2
 	}
 }
-
 
 ////////////////////////////////////////////////////////////////////
 //                         Score Limits                           //
