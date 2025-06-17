@@ -46,7 +46,7 @@ itemdef {
 ////////////////////////////////////////////////////////////////////
 
 menuDef {
-	name "Customcrosshair"
+	name "Outline"
 	rect 2 0 32 256
 	fullScreen MENU_FALSE
 	visible MENU_TRUE
