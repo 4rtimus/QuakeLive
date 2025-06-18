@@ -1,10 +1,10 @@
 ////////////////////////////////////////////////////////////////////
-//			    __  __ __  __ ____     		  //
-//		           / / / // / / // __ \			  //
-//			  / /_/ // / / // / / /			  //
-//			 / __  // /_/ // /_/ /			  //
-//			/_/ /_/ \____//_____/			  //
-//								  //
+//                         __  __ __  __ ____                     //
+//                        / / / // / / // __ \                    //
+//                       / /_/ // / / // / / /                    //
+//                      / __  // /_/ // /_/ /          |\~~~/|    //
+//                     /_/ /_/ \____//_____/          ( u , u )   //
+//                                                     => ^ <=    //
 ////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////
@@ -42,28 +42,29 @@ itemdef {
 }
 
 ////////////////////////////////////////////////////////////////////
-//                            Crosshair                           //
+//                   Crosshair Outline #2 + | #7 (+)              //
 ////////////////////////////////////////////////////////////////////
 
+// Size 14 Crosshair
 menuDef {
-	name "Outline"
+	name "Outline" 
 	rect 2 0 32 256
 	fullScreen MENU_FALSE
 	visible MENU_TRUE
 
 itemDef {
-	name "Horizontalbar"
-	rect 315.8 239 4.5 2
+	name "Horizontal"
+	rect 315.9 239 4.2 2
 	style WINDOW_STYLE_FILLED
-	backcolor 0 0 0 1
+	backcolor 0 .7 1 1
 	visible 1
 	}
 
 itemDef {
-	name "Verticalbar"
-	rect 317.3 237 1.5 6
+	name "Vertical"
+	rect 317.3 237.2 1.5 5.5
 	style WINDOW_STYLE_FILLED
-	backcolor 0 0 0 1
+	backcolor 0 .7 1 1
 	visible 1
 	}
 }
@@ -828,13 +829,13 @@ itemDef {
 ////////////////////////////////////////////////////////////////////
 
 menuDef {
-	name "weapon"
+	name "ammo"
 	fullScreen MENU_FALSE
 	visible MENU_TRUE	
 	rect 180 430 100 60
 
 itemDef {
-	name "weapon_shadow1" // right 
+	name "ammo_shadow1" // right 
 	rect 0.4 0 0 0
 	visible 1
 	textstyle ITEM_TEXTSTYLE_NORMAL	
@@ -844,7 +845,7 @@ itemDef {
 	}
 
 itemDef {
-	name "weapon_shadow2" // bottom
+	name "ammo_shadow2" // bottom
 	rect 0 0.5 0 0
 	visible 1
 	textstyle ITEM_TEXTSTYLE_NORMAL	
@@ -854,7 +855,7 @@ itemDef {
 	}
 
 itemDef {
-	name "weapon_shadow3" // left 
+	name "ammo_shadow3" // left 
 	rect -0.2 0 0 0
 	visible 1
 	textstyle ITEM_TEXTSTYLE_NORMAL	
@@ -864,7 +865,7 @@ itemDef {
 	}
 
 itemDef {
-	name "weapon_shadow4" // top 
+	name "ammo_shadow4" // top 
 	rect 0 -0.3 0 0
 	visible 1
 	textstyle ITEM_TEXTSTYLE_NORMAL	
@@ -874,7 +875,7 @@ itemDef {
 	}
 
 itemDef {
-	name "weapon"
+	name "ammo"
 	rect 0 0 0 0
 	visible 1
 	textstyle ITEM_TEXTSTYLE_NORMAL	
@@ -884,7 +885,7 @@ itemDef {
 	}
 
 itemDef {
-	name "a"
+	name "ammoicon"
 	rect -40 12 30 30
 	visible 1
 	decoration
