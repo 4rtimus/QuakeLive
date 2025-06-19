@@ -45,9 +45,9 @@ itemdef {
 //                   Crosshair Outline #2 + | #7 (+)              //
 ////////////////////////////////////////////////////////////////////
 
-// Size 14 Crosshair
+// Crosshair Size 14 
 menuDef {
-	name "Outline" 
+	name "Outline"
 	rect 2 0 32 256
 	fullScreen MENU_FALSE
 	visible MENU_TRUE
@@ -56,7 +56,7 @@ itemDef {
 	name "Horizontal"
 	rect 315.9 239 4.2 2
 	style WINDOW_STYLE_FILLED
-	backcolor 0 .7 1 1
+	backcolor 0 .7 1 1 // (Cyan) | 0 0 0 1 (Black)
 	visible 1
 	}
 
